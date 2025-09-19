@@ -1,70 +1,675 @@
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <title>Prabhat Pandit | Portfolio</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
+    <style>
+.button {
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.button {background-color: #008CBA;} /* Blue */
+.button:hover {
+  background-color: #4CAF50;
+  color: white;
+}
+</style>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Abhishek Raj</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans+Inline+One:ital@1&family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
 </head>
+
 <body>
-  <!-- Navbar -->
-  <header>
-    <nav>
-      <h1 class="logo">Prabhat Pandit</h1>
-      <ul class="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
 
-  <!-- Hero Section -->
-  <section class="hero">
-    <div class="hero-text">
-      <h2>Hi, I'm <span>Prabhat</span></h2>
-      <p>A passionate Web Developer 🚀</p>
-      <a href="#projects" class="btn">View My Work</a>
-    </div>
-  </section>
+  <!-- ======= Mobile nav toggle button ======= -->
+  <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
 
-  <!-- About Section -->
-  <section id="about" class="about">
-    <h2>About Me</h2>
-    <p>
-      I'm Prabhat Pandit, a web developer from Bihar, India. 
-      I love building modern, responsive websites and web applications using HTML, CSS, JavaScript, React.js, Vue.js, and more.
-    </p>
-  </section>
+  <!-- ======= Header ======= -->
+  <header id="header">
+    <div class="d-flex flex-column">
 
-  <!-- Projects Section -->
-  <section id="projects" class="projects">
-    <h2>Projects</h2>
-    <div class="project-list">
-      <div class="project-card">
-        <h3>Todo App</h3>
-        <p>A React app using Context API for managing todos.</p>
-        <a href="#" target="_blank">🔗 View Project</a>
+      <div class="profile">
+        <img src="assets/img/profile-img.jpg" alt="" class="img-fluid rounded-circle">
+        <h1 class="text-light"><a href="index.html">Abhishek Raj</a></h1>
+        <div class="social-links mt-3 text-center">
+          <a href="https://github.com/rockman0127" class="github"><i class="bx bxl-github"></i></a>
+          <a href="https://www.instagram.com/mr__well_wisher_27/" class="Instagram"><i class="bx bxl-instagram"></i></a>
+          <a href="https://www.linkedin.com/in/abhishek-raj-b45478167" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+        </div>
       </div>
-      <div class="project-card">
-        <h3>E-commerce Website</h3>
-        <p>Responsive e-commerce site with cart & checkout features built using Vue.js.</p>
-        <a href="#" target="_blank">🔗 View Project</a>
+
+      <nav id="navbar" class="nav-menu navbar">
+        <ul>
+          <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
+          <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
+          <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
+          <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Projects</span></a></li>
+          <li><a href="#services" class="nav-link scrollto"><i class="bx bx-server"></i> <span>Services</span></a></li>
+          <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
+        </ul>
+      </nav><!-- .nav-menu -->
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
+    <div class="hero-container" data-aos="fade-in">
+      <h1>Abhishek Raj</h1>
+      <p>I'm <span class="typed" data-typed-items="Designer, Developer, Freelancer, Photographer"></span></p>
+    </div>
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>About</h2>
+          <p>Experienced software engineer with a strong background in developing award-winning strategies for a diverse clientele. 2.5+
+years of industry experience includes leading large engineering teams to achieve concrete goals on a strict deadline. Strong
+skills include Appian, Java, Web Development and MySQL.</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4" data-aos="fade-right">
+            <img src="assets/img/profile-img.jpg" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
+            <h3>Software Engineer &amp; Developer.</h3>
+            <div class="row">
+              <div class="col-lg-6">
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>27 February 1998</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+91-8400277463</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Lucknow, India</span></li>
+                    <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>25</span></li>
+                </ul>
+              </div>
+              <div class="col-lg-6">
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Website:</strong> <span>abhishek27portfolio.github.io/Portfolio.github.io/</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>Graduate</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>rockman.abhishek27@gmail.com</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>Available</span></li>
+                </ul>
+              </div>
+            </div>
+            <p>
+              Do not let arrogance go to your head and despair to your heart; do not let compliments go to your head and criticisms to your heart; do not let success go to your head and failure to your heart.<br/>
+                — Roy T. Bennett
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
+
+    <!-- ======= Facts Section ======= -->
+    <section id="facts" class="facts">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Facts</h2>
+          <p>I have worked as a WINDOWS SERVER ADMINISTRATOR, INFRASTRUCTURE SUPPORT ENGINEER, SPLUNK DEVELOPER, WEB DEVELOPER, JAVA DEVELOPER and APPIAN DEVELOPER</p>
+        </div>
+
+        <div class="row no-gutters">
+
+          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up">
+            <div class="count-box">
+              <i class="bi bi-emoji-smile"></i>
+              <span data-purecounter-start="0" data-purecounter-end="25" data-purecounter-duration="1" class="purecounter"></span>
+              <p><strong>Happy Clients</strong>which include online freelancing, bussiness and corporate clients</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up" data-aos-delay="100">
+            <div class="count-box">
+              <i class="bi bi-journal-richtext"></i>
+              <span data-purecounter-start="0" data-purecounter-end="30" data-purecounter-duration="1" class="purecounter"></span>
+              <p><strong>Projects</strong>  which include Websites,project guidance, software minor bug fixes and coding related projects.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up" data-aos-delay="200">
+            <div class="count-box">
+              <i class="bi bi-headset"></i>
+              <span data-purecounter-start="0" data-purecounter-end="3840" data-purecounter-duration="1" class="purecounter"></span>
+              <p><strong>Hours Of Support</strong> include all my freelancing projects and corporate support.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Facts Section -->
+
+    <!-- ======= Skills Section ======= -->
+    <section id="skills" class="skills section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Skills</h2>
+          <p>I have many skills which include Core Java, Core Python, Web development, MySQL, Windows Server, Linux, HTML, CSS, JavaScript, Managment, Programming, Scripting, Debugging, Career Guidance, etc</p>
+        </div>
+
+        <div class="row skills-content">
+
+          <div class="col-lg-6" data-aos="fade-up">
+
+            <div class="progress">
+              <span class="skill">HTML <i class="val">80%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">CSS <i class="val">70%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">JavaScript <i class="val">75%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+
+            <div class="progress">
+              <span class="skill">Java <i class="val">80%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">MySQL <i class="val">70%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+              
+              <div class="progress">
+              <span class="skill">Windows Server/Desktop Support <i class="val">90%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">Photoshop <i class="val">70%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+            <div class="progress">
+              <span class="skill">Appian<i class="val">70%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Skills Section -->
+
+    <!-- ======= Resume Section ======= -->
+    <section id="resume" class="resume">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Resume</h2>
+          <p><a href="https://drive.google.com/file/d/1G64PJvxasIGxQf18g7hvZd18UwVY34gX/view?usp=drive_link"><button class="button"  > Download Resume</button></a></p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6" data-aos="fade-up">
+            <h3 class="resume-title">Sumary</h3>
+            <div class="resume-item pb-0">
+              <h4>Abhishek Raj</h4>
+              <p><em>Experienced software engineer with a strong background in developing award-winning strategies for a diverse clientele. 4.5+
+years of industry experience includes leading large engineering teams to achieve concrete goals on a strict deadline. Strong
+skills include Java, Web Development and MySQL.</em></p>
+              <ul>
+                <li>Lucknow, UP, India</li>
+                <li>+91- 8400277463</li>
+                <li>rockman.abhishek27@gmail.com</li>
+              </ul>
+            </div>
+
+            <h3 class="resume-title">Education</h3>
+            <div class="resume-item">
+              <h4>High School &amp; Senior Secondary School</h4>
+              <h5>2013 - 2015</h5>
+              <p><em>City Montessori school, Lucknow</em></p>
+              <ul>
+                <li>High School percentage: 86% </li>
+                <li>Senior Secondary School: 90%</li>
+              </ul>
+            </div>
+            <div class="resume-item">
+              <h4>Bachelor of Technology (Computer Science)</h4>
+              <h5>2016 - 2020</h5>
+              <p><em>Arya Institute of Engineering and Technology, Jaipur, India</em></p>
+              <li>Percentage scored: 71% </li>
+              <li>Division: <strong>Honors</strong></li>
+            </div>
+          </div>
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <h3 class="resume-title">Professional Experience</h3>
+            <div class="resume-item">
+              <h4>Freelancing</h4>
+              <h5>2019 - Present</h5>
+              <p><em>Lucknow, UP, India </em></p>
+              <ul>
+                <li>Web Development</li>
+                <li>Software bug fixing </li>
+                <li>Desktop Support</li>
+                <li>Resume writing</li>
+              </ul>
+            </div>
+            <div class="resume-item">
+              <h4>Capgemini India PVT LTD</h4>
+              <h5>APR, 2021 - NOV, 2022</h5>
+              <p><em>Noida, India</em></p>
+              <ul>
+                <li><strong>Project CSL Behring</strong><br/>As part of Windows Server - L3 team, I have been working under Data Center Services tower to support and resolve P1 and P2
+                incidents. Technology worked on are as follows:-<ul>
+                                      <li>Active Directory</li>
+                  <li>DNS</li>
+                  <li>DHCP</li>
+                  <li>Flexible Single master operations( FSMO )</li>
+                  <li>Group Policy Management</li>
+                  <li>Backup Management
+</li>
+                    <li>Active Directory Domain Services( ADDS )</li>
+                    <li>Windows Server Update Services( WSUS )
+</li>
+                    </ul>
+                  </li>
+                <li><strong>Project Automation Development Center</strong><br/>I have joined as a Splunk Developer. I have been trained to make Dashboard for capgemini
+internal projects to implement automation in various projects.
+</li>
+              </ul>
+            </div>
+            <div class="resume-item">
+              <h4>Appian Developer</h4>
+              <h5>NOV, 2022 - Present</h5>
+              <p><em>Jaipur, Rajasthan India </em></p>
+              <ul>
+                <li>Appian Interfaces</li>
+                <li>Appian Integerations</li>
+                <li>Appian Process Models</li>
+                <li>Appian Records and Data stores</li>
+                <li>Appian RPA</li>
+                <li>Appian Process Mining</li>
+              </ul>
+              <p>I joined Appcino Technology currently Xebia|Appcino in the year 2022 as Software Engineer. Currently I am working as an Senior Appian Developer in the Project Ambition with a team of 12 developers.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Resume Section -->
+<!-- ======= Portfolio Section ======= -->
+          <section id="portfolio" class="portfolio section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Projects</h2>
+          <p>These are some of my sample projects which I have done in periods of 4+ years and some services that I have offered. </p>
+        </div>
+
+        <div class="row" data-aos="fade-up">
+          <div class="col-lg-12 d-flex justify-content-center">
+            <ul id="portfolio-flters">
+              <li data-filter="*" class="filter-active">All</li>
+              <li data-filter=".filter-app">Blogs</li>
+              <li data-filter=".filter-card">Logos</li>
+              <li data-filter=".filter-web">Website</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="100">
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Blog: Quantum Holography"><i class="bx bx-plus"></i></a>
+                <a href="https://karan027.blogspot.com/2019/12/until-quite-recently-creating-hologram.html" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-2.jpg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/portfolio-2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Internship project of 2019"><i class="bx bx-plus"></i></a>
+                <a href="https://drive.google.com/file/d/15rt2kENAGn3q6q9YNKNNBELDqITYovSb/view?usp=sharing" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-3.jpg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/portfolio-3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Blog: Quantum Cryptography"><i class="bx bx-plus"></i></a>
+                <a href="https://karan027.blogspot.com/2019/12/i-n-quantum-cryptography-single-photons.html" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-4.jpg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/portfolio-4.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Youtube Channel logo"><i class="bx bx-plus"></i></a>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-5.jpg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/portfolio-5.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Portfolio Creation"><i class="bx bx-plus"></i></a>
+                <a href="https://github.com/rockman0127" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-6.jpg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/portfolio-6.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Blog: Lighting technologies of the future"><i class="bx bx-plus"></i></a>
+                <a href="https://karan027.blogspot.com/2019/12/lighting-technologies-of-future.html" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-7.jpg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/portfolio-7.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Personal Logo creation"><i class="bx bx-plus"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-8.jpg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/portfolio-8.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Gaming Logo Creation"><i class="bx bx-plus"></i></a>
+              </div>
+            </div>
+          </div>
+            
+         <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-9.jpg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/portfolio-9.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Blog: Micro and Nano LED’s"><i class="bx bx-plus"></i></a>
+                 <a href="https://karan027.blogspot.com/2019/12/micro-and-nano-leds.html" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Portfolio Section -->
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Services</h2>
+          <p>As a Professional Software Engineer and Business Analyst, I provide various services which include the following</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up">
+            <div class="icon"><i class="bi bi-briefcase"></i></div>
+            <h4 class="title"><a href="#contact">Full time/ Contractual work support</a></h4>
+            <p class="description">You can hire as a full time employee or on contract basis and depending upon the type of support or development role needed.</p>
+          </div>
+          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="100">
+            <div class="icon"><i class="bi bi-card-checklist"></i></div>
+            <h4 class="title"><a href="#contact">Website Maker</a></h4>
+            <p class="description">You can hire me to develop and deploy your personal websites.</p>
+          </div>
+          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="200">
+            <div class="icon"><i class="bi bi-bar-chart"></i></div>
+            <h4 class="title"><a href="#contact">Career counselor/Guidance</a></h4>
+            <p class="description">I also give my services as a career counselor.</p>
+          </div>
+          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="300">
+            <div class="icon"><i class="bi bi-binoculars"></i></div>
+            <h4 class="title"><a href="#contact">Network Marketing</a></h4>
+            <p class="description">I have networks for electronic items (refurbished phones and D2 products) and people who need bulk orders can contact me.</p>
+          </div>
+          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="400">
+            <div class="icon"><i class="bi bi-brightness-high"></i></div>
+            <h4 class="title"><a href="#contact">Car and Bike modifications</a></h4>
+            <p class="description">I also provide services for car and bike modifications. </p>
+          </div>
+          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="500">
+            <div class="icon"><i class="bi bi-calendar4-week"></i></div>
+            <h4 class="title"><a href="#contact">Coding Tutions</a></h4>
+            <p class="description">I like to teach yound minds about coding and how can they develop career in coding.</p>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Services Section -->
+
+    <!-- ======= Testimonials Section ======= -->
+    <section id="testimonials" class="testimonials section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Testimonials</h2>
+          <p>Some of my clients that praise my work and support me with their warm wishes.</p>
+        </div>
+
+        <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="testimonial-item" data-aos="fade-up">
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  I have known Abishek for nearly 12 years now - as we both were student at CMS. He also happens to be one of my closest friend. Abhishek is a creative at heart, and is a person of empathy and understanding. I feels that's is what makes him excel as a professional, moreover as a leader. He holds exceptional written and verbal communication skills, and is very effective team player. While working in any task, Abhishek ensures the success of all stakeholders and goes the extra mile to ensure that the overall experience is positive for all parties involved. He is also a self-starter and loves taking initiative to complete even the toughest of tasks. I wish him all the very best for all his future endeavors!
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+                <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
+                <h3>Adarsh Kumar</h3>
+                <h4>Engineer &amp; Developer at India Mart</h4>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item" data-aos="fade-up" data-aos-delay="100">
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  I just wanted to share a quick note and let you know that you do a really good job. I’m glad I decided to work with you. It’s really great how easy your websites are to update and manage. I never have any problem at all.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+                <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
+                <h3>Ayush Pandey</h3>
+                <h4>React Developer</h4>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item" data-aos="fade-up" data-aos-delay="200">
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  The work on my website and Internet marketing has made a significant different to our business. I’ve seen a increase in quote requests from the website which has been pretty remarkable – but I’d always like to see more!
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+                <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
+                <h3>Sakshi Choudhary</h3>
+                <h4>Software Engineer at Capgemini</h4>
+              </div>
+            </div><!-- End testimonial item -->
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+    </section><!-- End Testimonials Section -->
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Contact</h2>
+          <p><strong>You can reach me here!</strong></p>
+        </div>
+
+        <div class="row" data-aos="fade-in">
+
+          <div class="col-lg-5 d-flex align-items-stretch">
+            <div class="info">
+              <div class="address">
+                <i class="bi bi-geo-alt"></i>
+                <h4>Location:</h4>
+                <p>Om Nagar, Alambgh, Lucknow, Uttar Pradesh 226005</p>
+              </div>
+
+              <div class="email">
+                <i class="bi bi-envelope"></i>
+                <h4>Email:</h4>
+                <p>rockman.abhishek27@gmail.com</p>
+              </div>
+
+              <div class="phone">
+                <i class="bi bi-phone"></i>
+                <h4>Call:</h4>
+                <p>+91- 8400277463</p>
+              </div>
+
+             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2994.3187409832876!2d80.90829743340296!3d26.812422047930827!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399bfc3d16b45961%3A0x49a116a2358f51ad!2sEmApps!5e0!3m2!1sen!2sin!4v1660036187787!5m2!1sen!2sin" width="300" height="270" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+          </div>
+
+          <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
+            <form action="https://formspree.io/f/meqdqjwy" method="post">
+                <div class="php-email-form">
+                 <div class="row">
+                <div class="form-group col-md-6">
+                  <label for="name">Your Name</label>
+                  <input type="text" name="name" class="form-control" id="name" required>
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="name">Your Email</label>
+                  <input type="email" class="form-control" name="email" id="email" required>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="name">Subject</label>
+                <input type="text" class="form-control" name="subject" id="subject" required>
+              </div>
+              <div class="form-group">
+                <label for="name">Message</label>
+                <textarea class="form-control" name="message" rows="10" required></textarea>
+              </div>
+               <div class="my-3">
+                <div class="loading">Loading</div>
+              </div>
+              <div class="text-center"><button type="submit">Send Message</button></div></div>
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright 2022 <strong><span></span></strong>
+      </div>
+      <div class="credits">
+        Designed by Abhishek Raj
       </div>
     </div>
-  </section>
+  </footer><!-- End  Footer -->
 
-  <!-- Contact Section -->
-  <section id="contact" class="contact">
-    <h2>Contact Me</h2>
-    <p>Email: <a href="mailto:youremail@gmail.com">youremail@gmail.com</a></p>
-    <p>GitHub: <a href="https://github.com/prabhat-pandit" target="_blank">github.com/prabhat-pandit</a></p>
-    <p>LinkedIn: <a href="#" target="_blank">linkedin.com/in/prabhat-pandit</a></p>
-  </section>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
-  <!-- Footer -->
-  <footer>
-    <p>© 2025 Prabhat Pandit | All Rights Reserved</p>
-  </footer>
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/typed.js/typed.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
 </body>
+
 </html>
